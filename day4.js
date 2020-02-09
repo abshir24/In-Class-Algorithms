@@ -10,6 +10,8 @@ function countParens(string){
     return count
 }
 
+console.log(countParens(")"))
+
 //Given a string input return true or false if the parenthesis in the string are valid.
 // Meaning check to see if all opening and closing parenthesis match. 
 //(Example: Given string “(Valid)” this would return true. Given string ”(Invalid)” 
@@ -30,3 +32,5 @@ function parensValid(string){
     //if parensCheck = 0 then it will return true. If not it will return false
     return (parensCheck == 0)
 }
+
+console.log(parensValid("(())"))
