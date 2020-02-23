@@ -30,12 +30,21 @@ print(nthAway([1,2,3,4,5],4))
 
 def moveMin(arr):
     # this line of code locates and stores the minimum index of an array 
-    minIndex = arr.index(min(arr))
+    minIndex = arr.index(min(arr)) 
+    minVal = min(arr)
 
+    #  Trick 1 to solving
     for i in range(minIndex,0,-1):
-        temp = arr[i]
         arr[i] = arr[i-1]
-        arr[i-1]=temp
+    
+    arr[0] = minVal
+
+    # Trick 2
+    # for i in range(minIndex,0,-1):
+    #     # lines 36-39 swap the values in the array
+    #     temp = arr[i]
+    #     arr[i] = arr[i-1]
+    #     arr[i-1]=temp
     
     return arr
 
