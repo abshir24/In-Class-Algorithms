@@ -15,14 +15,14 @@ def removeDupes(arr):
         
     return arr
 
-
-
+# Fibonacci Sequence algo
 
 def fib(stop):
     a = 0
     b = 1
     print(a)
     print(b)
+    # We have already printed off the first 2 values
     stop-=2
     while stop>0:
         c = a+b
