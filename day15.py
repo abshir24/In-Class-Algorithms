@@ -23,7 +23,6 @@ def removeSpaces(string):
     while string[firstLetterIndex] == ' ':
         firstLetterIndex += 1
 
-
     # Bypass all trailing whitespaces
     while string[lastLetterIndex] == ' ':
         lastLetterIndex -= 1
